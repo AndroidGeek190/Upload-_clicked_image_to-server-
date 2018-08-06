@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert"/>
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">#0dcc27</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#f1f1f1
+        </item>
+
+        <!-- To change the popup menu and app text color  -->
+        <item name="android:textColor">@color/colorPrimary</item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#bab6b6</item>
+        <item name="android:itemBackground">@color/skyBlue</item>
+
+    </style>
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean"/>
+        <attr name="matProg_barColor" format="color"/>
+        <attr name="matProg_rimColor" format="color"/>
+        <attr name="matProg_rimWidth" format="dimension"/>
+        <attr name="matProg_spinSpeed" format="float"/>
+        <attr name="matProg_barSpinCycleTime" format="integer"/>
+        <attr name="matProg_circleRadius" format="dimension"/>
+        <attr name="matProg_fillRadius" format="boolean"/>
+        <attr name="matProg_barWidth" format="dimension"/>
+        <attr name="matProg_linearProgress" format="boolean"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@null">
+
+            <ImageView
+                android:id="@+id/back_arrow"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="@dimen/marginTop_22"
+                android:background="@drawable/ic_arrow_back_black_24dp" />
+
+            <ImageView
+                android:layout_width="145dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="@dimen/marginLeft_30"
+                android:background="@drawable/logo_snap" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop_25"
+                android:layout_marginRight="@dimen/marginRight_15"
+                android:layout_gravity="center|end"
+                android:text="I'm looking for :"
+                android:textColor="@color/textColor_blue"
+                android:textSize="@dimen/textsize_16"
+                android:textStyle="bold" />
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/get_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:src="@drawable/loading"
+                    android:scaleType="fitXY"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_10"
+                android:paddingLeft="@dimen/paddingLeft_10"
+                android:paddingRight="@dimen/paddingRight_10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginBottom_10"
+                    android:layout_marginTop="@dimen/marginTop_10"
+                    android:background="@drawable/button_border_selector"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/paddingBottom_15"
+                    android:paddingLeft="@dimen/paddingLeft_10"
+                    android:paddingRight="@dimen/paddingRight_10"
+                    android:paddingTop="@dimen/paddingTop_15">
+
+                    <TextView
+                        android:id="@+id/location_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/location4"
+                        android:drawablePadding="@dimen/drawablePadding_10"
+                        android:gravity="center_vertical"
+                        android:text="DUMMY"
+                        android:textColor="@color/textColor_blue"
+                        android:textSize="@dimen/textsize_12"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_border_selector"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/paddingBottom_15"
+                    android:paddingLeft="@dimen/paddingLeft_10"
+                    android:paddingRight="@dimen/paddingRight_10"
+                    android:paddingTop="@dimen/paddingTop_15">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/bed"
+                        android:drawablePadding="@dimen/drawablePadding_10"
+                        android:gravity="center_vertical"
+                        android:text="NUMBER OF BEDROOMS"
+                        android:textColor="@color/textColor_blue"
+                        android:textSize="@dimen/textsize_12"
+                        android:textStyle="bold"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginLeft_22"
+                        android:layout_marginRight="@dimen/marginRight_10">
+
+                        <ImageView
+                            android:id="@+id/no_of_bedroom_minus"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignBottom="@+id/tv_output1"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:src="@drawable/rounded_minus" />
+
+                        <TextView
+                            android:id="@+id/tv_output1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="0"
+                            android:textColor="@color/textColor_blue"
+                            android:textSize="@dimen/textsize_18"/>
+
+                        <ImageView
+                            android:id="@+id/no_of_bedrooms_plus"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="@dimen/marginTop_4"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/round_plus"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginBottom_10"
+                    android:layout_marginTop="@dimen/marginTop_10"
+                    android:background="@drawable/button_border_selector"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/paddingBottom_15"
+                    android:paddingLeft="@dimen/paddingLeft_10"
+                    android:paddingRight="@dimen/paddingRight_10"
+                    android:paddingTop="@dimen/paddingTop_15">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/bath"
+                        android:drawablePadding="@dimen/drawablePadding_10"
+                        android:gravity="center_vertical"
+                        android:text="NUMBER OF BATHROOMS"
+                        android:textColor="@color/textColor_blue"
+                        android:textSize="@dimen/textsize_12"
+                        android:textStyle="bold"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginLeft_10"
+                        android:layout_marginRight="@dimen/marginRight_10">
+
+                        <ImageView
+                            android:id="@+id/no_of_bathroom_minus"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="@dimen/marginTop_1"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginRight="@dimen/marginRight_8"
+                            android:src="@drawable/rounded_minus" />
+
+                        <TextView
+                            android:id="@+id/tv_output2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="0"
+                            android:textColor="@color/textColor_blue"
+                            android:textSize="@dimen/textsize_18"/>
+                        <ImageView
+                            android:id="@+id/bathroom_plus"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="@dimen/marginTop_2"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/marginRight_8"
+                            android:src="@drawable/round_plus"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_border_selector"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/paddingBottom_15"
+                    android:paddingLeft="@dimen/paddingLeft_10"
+                    android:paddingRight="@dimen/paddingRight_10"
+                    android:paddingTop="@dimen/paddingTop_15">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/garage"
+                        android:drawablePadding="@dimen/drawablePadding_10"
+                        android:gravity="center_vertical"
+                        android:text="NUMBER OF GARAGES"
+                        android:textColor="@color/textColor_blue"
+                        android:textSize="@dimen/textsize_12"
+                        android:textStyle="bold"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginLeft_28"
+                        android:layout_marginRight="@dimen/marginRight_10">
+
+                        <ImageView
+                            android:id="@+id/no_of_garages_minus"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/rounded_minus" />
+
+                        <TextView
+                            android:id="@+id/tv_output3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="0"
+                            android:textColor="@color/textColor_blue"
+                            android:textSize="@dimen/textsize_18"/>
+
+                        <ImageView
+                            android:id="@+id/no_of_garages_plus"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/round_plus" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginBottom_10"
+                    android:layout_marginTop="@dimen/marginTop_10"
+                    android:background="@drawable/button_border_selector"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/paddingBottom_15"
+                    android:paddingLeft="@dimen/paddingLeft_10"
+                    android:paddingRight="@dimen/paddingRight_10"
+                    android:paddingTop="@dimen/paddingTop_15">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/pool"
+                        android:drawablePadding="@dimen/drawablePadding_10"
+                        android:gravity="center_vertical"
+                        android:text="SWIMMING POOL"
+                        android:textColor="@color/textColor_blue"
+                        android:textSize="@dimen/textsize_12"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/swimming_pool_garden"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:theme="@style/SCBSwitch" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_border_selector"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/paddingBottom_15"
+                    android:paddingLeft="@dimen/paddingLeft_10"
+                    android:paddingRight="@dimen/paddingRight_10"
+                    android:paddingTop="@dimen/paddingTop_15">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/garden"
+                        android:drawablePadding="@dimen/drawablePadding_10"
+                        android:gravity="center_vertical"
+                        android:text="LANDSCAPED GARDEN"
+                        android:textColor="@color/textColor_blue"
+                        android:textSize="@dimen/textsize_12"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/garden_switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:theme="@style/SCBSwitch" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTop_10"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/paddingLeft_10"
+                    android:paddingRight="@dimen/paddingRight_10">
+
+                    <TextView
+                        android:id="@+id/my_offer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/drawablePadding_10"
+                        android:gravity="center_vertical"
+                        android:text="MY OFFER"
+                        android:textColor="@color/textColor_blue"
+                        android:textSize="@dimen/textsize_12"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                    android:id="@+id/rangeSeekbar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTop_15"
+                    android:padding="@dimen/padding_10"
+                    app:bar_highlight_color="@color/colorYellow"
+                    app:corner_radius="10"
+                    app:left_thumb_color="@color/colorYellow"
+                    app:left_thumb_color_pressed="@color/colorPrimaryYellow"
+                    app:right_thumb_color="@color/colorYellow"
+                    app:right_thumb_color_pressed="@color/colorPrimaryYellow" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mini_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:textColor="@color/textColor_blue"
+                        android:layout_marginLeft="@dimen/marginLeft_10"
+                        android:layout_weight=".5"
+                        android:padding="@dimen/padding_5" />
+
+                    <TextView
+                        android:id="@+id/max_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/marginRight_10"
+                        android:textColor="@color/textColor_blue"
+                        android:layout_weight=".5"
+                        android:gravity="end"
+                        android:padding="@dimen/padding_5" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/marginBottom_20"
+                    android:layout_marginLeft="@dimen/marginLeft_10"
+                    android:layout_marginRight="@dimen/marginRight_10"
+                    android:layout_marginTop="@dimen/marginTop_15"
+                    android:background="@drawable/button_selector"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textColor_wight"
+                    android:textSize="@dimen/textsize_20"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

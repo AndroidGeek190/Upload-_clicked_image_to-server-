@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:itemBackground="@color/colorAccent"
+            android:layout_height="?attr/actionBarSize">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                 android:background="@drawable/logo_snap"
+                android:layout_marginLeft="@dimen/marginLeft_15" />
+        </android.support.v7.widget.Toolbar>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/actv_search"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/marginLeft_15"
+            android:layout_marginRight="@dimen/marginRight_15"
+            android:layout_marginTop="@dimen/marginTop_8"
+            android:singleLine="true"
+            android:textColorHint="@color/textColorHint_blue"
+            android:background="@drawable/border_rectangular_white_selector"
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            android:drawablePadding="@dimen/drawablePadding_10"
+            android:hint="@string/hint_search"
+            android:textColor="@color/textColor_blue"
+            android:padding="@dimen/padding_10"
+            android:textSize="@dimen/textsize_18" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+<ImageView
+    android:id="@+id/retry_connection"
+    android:layout_width="wrap_content"
+    android:layout_height="250dp"
+    android:visibility="invisible"
+    android:clickable="false"
+    android:layout_marginTop="@dimen/marginTop_70"
+    android:src="@drawable/internet_connection"/>
+
+        <Button
+            android:id="@+id/internet_connection"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textColor="@color/textColor_wight"
+            android:text="@string/hint_retry"
+            android:textAllCaps="false"
+            android:visibility="invisible"
+            android:background="@color/textColor_blue"
+            android:layout_alignBottom="@id/retry_connection"
+            android:layout_marginBottom="@dimen/marginBottom_10"
+            android:layout_centerHorizontal="true"/>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_camera_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:elevation="5dp"
+            android:layout_marginBottom="@dimen/marginBottom_15"
+            android:layout_marginRight="@dimen/marginRight_15"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_camera_alt_white_24dp"
+            app:backgroundTint="@color/textColor_blue"/>
+    </RelativeLayout>
+</LinearLayout>

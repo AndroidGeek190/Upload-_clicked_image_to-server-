@@ -1,0 +1,30 @@
+<resources>
+
+    <!--app name-->
+
+    <string name="app_name">Snapitup</string>
+
+    <!--sign up validation-->
+
+    <string name="hint_email">Email</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_surname">Surname</string>
+    <string name="hint_number">Mobile Number</string>
+    <string name="hint_OldPassword">Old Password</string>
+    <string name="hint_NewPassword">New Password</string>
+    <string name="hint_ConfirmPassword">Confirm Password</string>
+    <string name="hint_search">Search</string>
+    <string name="hint_retry">Retry</string>
+    <string name="hint_password">Password</string>
+
+    hint_password
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="err_msg_username">Enter Username</string>
+    <string name="err_msg_number">Enter the Mobile Number</string>
+    <string name="err_msg_password">Enter Password Atleast 6 Character</string>
+    <string name="err_mssg_password">Enter New Password Atleast 6 Character</string>
+    <string name="err_mssgg_password">Enter Confirm Password</string>
+    <string name="err_msg_surname">Enter Surname </string>
+
+
+</resources>

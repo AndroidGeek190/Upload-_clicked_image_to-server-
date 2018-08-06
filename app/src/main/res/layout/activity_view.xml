@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:itemBackground="@color/colorAccent"
+            android:layout_height="?attr/actionBarSize">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:background="@drawable/logo_snap"/>
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/get_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/loading" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginBottom_10"
+                    android:layout_marginTop="@dimen/marginTop_10"
+                    android:background="@drawable/button_border_selector"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/paddingBottom_15"
+                    android:paddingLeft="@dimen/paddingLeft_10"
+                    android:paddingRight="@dimen/paddingRight_10"
+                    android:paddingTop="@dimen/paddingTop_15">
+
+                    <TextView
+                        android:id="@+id/location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/location4"
+                        android:drawablePadding="@dimen/drawablePadding_10"
+                        android:gravity="center_vertical"
+                        android:text="DUMMY"
+                        android:textColor="@color/textColor_blue"
+                        android:textSize="@dimen/textsize_12"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_border_selector"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/paddingBottom_15"
+                    android:paddingLeft="@dimen/paddingLeft_10"
+                    android:paddingRight="@dimen/paddingRight_10"
+                    android:paddingTop="@dimen/paddingTop_15">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/bed"
+                        android:drawablePadding="@dimen/drawablePadding_10"
+                        android:gravity="center_vertical"
+                        android:text="NUMBER OF BEDROOMS"
+                        android:textColor="@color/textColor_blue"
+                        android:textSize="@dimen/textsize_12"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pdetails_bed_no"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/marginLeft_5"
+                        android:background="@drawable/circle_selector"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_5"
+                        android:text="0"
+                        android:textColor="@color/textColor_blue"
+                        android:textSize="@dimen/textsize_22"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginBottom_10"
+                    android:layout_marginTop="@dimen/marginTop_10"
+                    android:background="@drawable/button_border_selector"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/paddingBottom_15"
+                    android:paddingLeft="@dimen/paddingLeft_10"
+                    android:paddingRight="@dimen/paddingRight_10"
+                    android:paddingTop="@dimen/paddingTop_15">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/bath"
+                        android:drawablePadding="@dimen/drawablePadding_10"
+                        android:gravity="center_vertical"
+                        android:text="NUMBER OF BATHROOMS"
+                        android:textColor="@color/textColor_blue"
+                        android:textSize="@dimen/textsize_12"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pdetails_bath_no"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/marginLeft_5"
+                        android:background="@drawable/circle_selector"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_5"
+                        android:text="0"
+                        android:textColor="@color/textColor_blue"
+                        android:textSize="@dimen/textsize_22"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_border_selector"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/paddingBottom_15"
+                    android:paddingLeft="@dimen/paddingLeft_10"
+                    android:paddingRight="@dimen/paddingRight_10"
+                    android:paddingTop="@dimen/paddingTop_15">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/garage"
+                        android:drawablePadding="@dimen/drawablePadding_10"
+                        android:gravity="center_vertical"
+                        android:text="NUMBER OF GARAGES"
+                        android:textColor="@color/textColor_blue"
+                        android:textSize="@dimen/textsize_12"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/pdetails_garages_no"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/marginLeft_5"
+                        android:background="@drawable/circle_selector"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_5"
+                        android:text="0"
+                        android:textColor="@color/textColor_blue"
+                        android:textSize="@dimen/textsize_22"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginBottom_10"
+                    android:layout_marginTop="@dimen/marginTop_10"
+                    android:background="@drawable/button_border_selector"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/paddingBottom_15"
+                    android:paddingLeft="@dimen/paddingLeft_10"
+                    android:paddingRight="@dimen/paddingRight_10"
+                    android:paddingTop="@dimen/paddingTop_15">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/pool"
+                        android:drawablePadding="@dimen/drawablePadding_10"
+                        android:gravity="center_vertical"
+                        android:text="SWIMMING POOL"
+                        android:textColor="@color/textColor_blue"
+                        android:textSize="@dimen/textsize_12"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/pdetails_pool_check"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/marginLeft_5"
+                        android:background="@drawable/circle_selector"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_5"
+                        android:text="Y"
+                        android:textColor="@color/textColor_blue"
+                        android:textSize="@dimen/textsize_22"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_border_selector"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/paddingBottom_15"
+                    android:paddingLeft="@dimen/paddingLeft_10"
+                    android:paddingRight="@dimen/paddingRight_10"
+                    android:paddingTop="@dimen/paddingTop_15">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/garden"
+                        android:drawablePadding="@dimen/drawablePadding_10"
+                        android:gravity="center_vertical"
+                        android:text="LANDSCAPED GARDEN"
+                        android:textColor="@color/textColor_blue"
+                        android:textSize="@dimen/textsize_12"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pdetails_garden_check"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/marginLeft_5"
+                        android:background="@drawable/circle_selector"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_5"
+                        android:text="N"
+                        android:textColor="@color/textColor_blue"
+                        android:textSize="@dimen/textsize_22"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTop_10"
+                    android:background="@drawable/button_border_selector"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/paddingBottom_15"
+                    android:paddingLeft="@dimen/paddingLeft_10"
+                    android:paddingRight="@dimen/paddingRight_10"
+                    android:paddingTop="@dimen/paddingTop_15">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:drawableLeft="@drawable/coins1"
+                        android:drawablePadding="@dimen/drawablePadding_10"
+                        android:gravity="center_vertical"
+                        android:text="MY OFFER"
+                        android:textColor="@color/textColor_blue"
+                        android:textSize="@dimen/textsize_12"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/price_range"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginLeft_40"
+                        android:layout_weight="1"
+                        android:buttonTint="#444"
+                        android:enabled="false"
+                        android:gravity="end"
+                        android:text="2123988"
+                        android:textColor="@color/textColor_blue"
+                        android:textSize="@dimen/textsize_16" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button_delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/marginBottom_20"
+                    android:layout_marginLeft="@dimen/marginLeft_10"
+                    android:layout_marginRight="@dimen/marginRight_10"
+                    android:layout_marginTop="@dimen/marginTop_15"
+                    android:background="@drawable/button_selector"
+                    android:text="Delete Property"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textColor_wight"
+                    android:textSize="@dimen/textsize_20"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

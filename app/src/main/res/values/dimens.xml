@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Padding list-->
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="padding_2">2dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="paddingLeft_10">10dp</dimen>
+    <dimen name="paddingRight_10">10dp</dimen>
+    <dimen name="paddingBottom_15">15dp</dimen>
+    <dimen name="paddingTop_15">15dp</dimen>
+    <dimen name="drawablePadding_10">10dp</dimen>
+
+
+<!--Margin list-->
+    <dimen name="marginTop_140">140dp</dimen>
+    <dimen name="marginTop_5">5dp</dimen>
+    <dimen name="marginTop_1">1dp</dimen>
+    <dimen name="marginTop_2">2dp</dimen>
+    <dimen name="marginTop_4">4dp</dimen>
+    <dimen name="marginTop_10">10dp</dimen>
+    <dimen name="marginTop_22">22dp</dimen>
+    <dimen name="marginTop_8">8dp</dimen>
+    <dimen name="marginTop_200">200dp</dimen>
+    <dimen name="marginTop_70">70dp</dimen>
+    <dimen name="marginTop_50">50dp</dimen>
+    <dimen name="marginTop_60">60dp</dimen>
+    <dimen name="marginTop_15">15dp</dimen>
+    <dimen name="marginTop_30">30dp</dimen>
+    <dimen name="marginBottom_40">40dp</dimen>
+    <dimen name="marginBottom_30">30dp</dimen>
+    <dimen name="marginBottom_10">10dp</dimen>
+    <dimen name="marginBottom_15">15dp</dimen>
+    <dimen name="marginBottom_20">20dp</dimen>
+    <dimen name="marginTop_25">25dp</dimen>
+    <dimen name="marginTop_40">40dp</dimen>
+    <dimen name="marginTop_100">100dp</dimen>
+    <dimen name="marginTop_20">20dp</dimen>
+    <dimen name="marginLeft_20">20dp</dimen>
+    <dimen name="marginLeft_28">28dp</dimen>
+    <dimen name="marginLeft_5">5dp</dimen>
+    <dimen name="marginLeft_40">40dp</dimen>
+    <dimen name="marginLeft_10">10dp</dimen>
+    <dimen name="marginLeft_15">15dp</dimen>
+    <dimen name="marginLeft_30">30dp</dimen>
+    <dimen name="marginLeft_22">22dp</dimen>
+    <dimen name="marginRight_20">20dp</dimen>
+    <dimen name="marginRight_10">10dp</dimen>
+    <dimen name="marginRight_8">8dp</dimen>
+    <dimen name="marginRight_15">15dp</dimen>
+    <dimen name="marginRight_5">5dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+
+
+<!--Text size-->
+    <dimen name="textsize_18">18dp</dimen>
+    <dimen name="textsize_14">14dp</dimen>
+    <dimen name="textsize_16">16dp</dimen>
+    <dimen name="textsize_12">12dp</dimen>
+    <dimen name="textsize_20">20dp</dimen>
+    <dimen name="textsize_22">22dp</dimen>
+</resources>

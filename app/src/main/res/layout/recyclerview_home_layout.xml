@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:weightSum="2"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/adapter_card_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardElevation="10dp"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/marginRight_5"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/button_border_selector"
+                android:layout_height="wrap_content"
+                android:id="@+id/preview_image"
+                android:padding="@dimen/padding_2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/preview_img"
+                    android:layout_width="240dp"
+                    android:layout_height="160dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center_horizontal"
+                    android:adjustViewBounds="true"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/mymeasure_adapter_layout"
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/marginTop_5"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/mymeasurement_adapter_image"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/location"/>
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/adapter_property_name"
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:text="GOLDFIELD RD,"
+                                android:textColor="#000"
+                                android:padding="@dimen/padding_5"
+                                android:maxLines="2"
+                                android:layout_gravity="center_vertical"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/textsize_14" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</LinearLayout>
